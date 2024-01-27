@@ -1,51 +1,279 @@
 {
-  "skills": [
+  "education_and_training": [
     {
-      "id": "1",
-      "src": "./img/product-chain-1.png",
-      "title": "Front-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "start_date": "02/10/2019",
+      "end_date": "15/07/2024",
+      "education": "Electrical and Computer Engineering",
+      "institution": "Addis Ababa University",
+      "image": "./img/aau.png"
     },
     {
-      "id": "2",
-      "src": "./img/tag-1.png",
-      "title": "Back-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "start_date": "25/09/2015",
+      "end_date": "15/06/2019",
+      "education": "High School diploma",
+      "institution": "Kidame Gebeya",
+      "image": "./img/KIDAME GEBEYA.png"
     },
     {
-      "id": "3",
-      "src": "./img/feather-pen-2.png",
-      "title": "UI & UX Design",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
-    },
-    {
-      "id": "4",
-      "src": "./img/feather-pen-1.png",
-      "title": "Webflow Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "start_date": "11/10/2018",
+      "end_date": "29/06/2019",
+      "education": "American English Language",
+      "institution": "TEFL",
+      "image": "./img/TEFL1.png"
     }
   ],
+
+  "work_experience": [
+    {
+      "start_date": "01/10/2023",
+      "end_date": "Current",
+      "position": "Software Developer",
+      "employer": "Ministry of Innovation and Technology (MinT)",
+      "image": "./img/mint.png",
+      "responsibilities": [
+        "Proposing innovative digital systems to enhance operational efficiency by replacing manual workflows.",
+        "Leading a highly skilled web development team, providing strategic guidance and fostering collaboration for specific projects.",
+        "Designing and developing complex systems, contributing to the entire software development life cycle."
+      ]
+    },
+    {
+      "start_date": "10/05/2023",
+      "end_date": "Current",
+      "position": "Software Developer",
+      "employer": "Vawick Consulting",
+      "location": {
+        "city": "Berlin",
+        "country": "Germany"
+      },
+      "image": "./img/vawick 1.png",
+      "responsibilities": [
+        "Executing end-to-end projects with precision, managing tasks from conceptualization to deployment.",
+        "Leveraging a diverse array of development frameworks and libraries to craft sophisticated and efficient solutions.",
+        "Ensuring seamless compatibility across various devices and screen sizes, prioritizing a consistent user experience."
+      ]
+    },
+    {
+      "start_date": "15/08/2023",
+      "end_date": "Current",
+      "position": "Software Developer",
+      "employer": "Federal Police - Software Development",
+      "location": {
+        "city": "City Name",
+        "country": "Country Name"
+      },
+      "image": "./img/federal.png",
+      "responsibilities": [
+        "Collaborating with law enforcement professionals to identify and address software needs that enhance public safety.",
+        "Developing secure and robust software solutions to support critical law enforcement operations.",
+        "Integrating cutting-edge technologies to optimize data analysis and streamline investigative processes."
+      ]
+    }
+  ],
+
+  "certificates": [
+    {
+      "issue_date": "Dec 2024",
+      "image_url": "./img/IBM.png",
+      "institution": "IBM - Coursera",
+      "description": "Python Project for Data Science",
+      "certificate_name": "Certificate in Python Project for Data Science"
+    },
+    {
+      "issue_date": "Dec 2024",
+      "image_url": "./img/IBM.png",
+      "institution": "IBM - Coursera",
+      "description": "Python for Data Science, AI & Development",
+      "certificate_name": "Certificate in Python for Data Science, AI & Development"
+    },
+
+    {
+      "issue_date": "Oct 2022",
+      "image_url": "./img/freecodecamp.png",
+      "institution": "FreeCodeCamp",
+      "description": "Front-End Development Libraries",
+      "certificate_name": "Certificate in Front-End Development Libraries"
+    },
+    {
+      "issue_date": "Oct 2022",
+      "image_url": "./img/John.png",
+      "institution": "Johns Hopkins University - Coursera",
+      "description": "HTML, CSS, and JavaScript",
+      "certificate_name": "Certificate in HTML, CSS, and JavaScript"
+    },
+    {
+      "issue_date": "Nov 2022",
+      "image_url": "./img/Hong Kong.png",
+      "institution": "Hong Kong University - Coursera",
+      "description": "Front-End Web Development with React",
+      "certificate_name": "Certificate in Front-End Web Development with React"
+    },
+    {
+      "issue_date": "Oct 2022",
+      "image_url": "./img/Hong Kong.png",
+      "institution": "Hong Kong University - Coursera",
+      "description": "Server-Side Development with Node.js, Express & MongoDB",
+      "certificate_name": "Certificate in Server-Side Development with Node.js, Express & MongoDB"
+    },
+
+    {
+      "issue_date": "Nov 2021",
+      "image_url": "./img/Hong Kong.png",
+      "institution": "Huawei",
+      "description": "Seeds for the Future",
+      "certificate_name": "Certificate in Seeds for the Future"
+    }
+  ],
+
+  "skills": [
+    {
+      "id": 3,
+      "title": "Bootstarap",
+      "category": "Frontend",
+      "image": "./img/bootstrap.png",
+      "description": "A high-level web framework for Python that encourages rapid development and clean, pragmatic design."
+    },
+    {
+      "id": 4,
+      "title": "Material Ui",
+      "category": "Frontend",
+      "image": "./img/material ui.png",
+      "description": "A progressive css framework for building user interfaces."
+    },
+    {
+      "id": 5,
+      "title": "JavaScript",
+      "category": "Frontend",
+      "image": "./img/javascript.png",
+      "description": "A versatile programming language that enables interactive web pages."
+    },
+    {
+      "id": 6,
+      "title": "React",
+      "category": "Frontend",
+      "image": "./img/react.png",
+      "description": "A JavaScript library for building user interfaces, particularly single-page applications."
+    },
+    {
+      "id": 7,
+      "title": "Angular",
+      "category": "Frontend",
+      "image": "./img/angular.png",
+      "description": "A TypeScript-based open-source framework for building client-side web applications."
+    },
+
+    {
+      "id": 8,
+      "title": "Node.js",
+      "category": "Backend",
+      "image": "./img/node.png",
+      "description": "An open-source, cross-platform JavaScript runtime environment for server-side development."
+    },
+    {
+      "id": 9,
+      "title": "Express.js",
+      "category": "Backend",
+      "image": "./img/express1.png",
+      "description": "A minimal and flexible Node.js web application framework for building robust web applications."
+    },
+    {
+      "id": 10,
+      "title": "NestJs",
+      "category": "Backend",
+      "image": "./img/nest.png",
+      "description": "A minimal and flexible Node.js web application framework for building robust web applications."
+    },
+
+    {
+      "id": 11,
+      "title": "SQL",
+      "category": "Database",
+      "image": "./img/sql.png",
+      "description": "A domain-specific language used for managing and manipulating relational databases."
+    },
+    {
+      "id": 12,
+      "title": "MongoDB",
+      "category": "Database",
+      "image": "./img/mongo.png",
+      "description": "A NoSQL document database that provides high performance, high availability, and easy scalability."
+    },
+
+    {
+      "id": 13,
+      "title": "MySQL",
+      "category": "Database",
+      "image": "./img/mysql1.png",
+      "description": "An open-source relational database management system."
+    },
+
+    {
+      "id": 14,
+      "title": "Figma",
+      "category": "Design",
+      "image": "./img/figma1.png",
+      "description": "A cloud-based design tool that enables real-time collaboration on design projects."
+    },
+
+    {
+      "id": 15,
+      "title": "Git",
+      "category": "Git-GitHub",
+      "image": "./img/git.png",
+      "description": "A distributed version control system for tracking changes in source code during software development."
+    },
+    {
+      "id": 16,
+      "title": "GitHub",
+      "category": "Git-GitHub",
+      "image": "./img/github1.png",
+      "description": "A web-based platform for version control using Git, facilitating collaboration on software projects."
+    },
+
+    {
+      "id": 17,
+      "title": "Flutter",
+      "category": "Mobile-App",
+      "image": "./img/flutter.png",
+      "description": "An open-source UI software development toolkit created by Google for building natively compiled applications for mobile, web, and desktop from a single codebase."
+    }
+  ],
+
   "portfolio": [
     {
       "id": "1",
       "src": "./img/placeholder-image.png",
       "title": "Ahuse",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "link": "View In Github",
+      "stacks":["./img/material ui.png", "./img/react.png", "./img/redux-toolkit.png", "./img/redux-saga.png", "./img/node.png", "./img/express1.png", "./img/mongo.png"]
     },
     {
       "id": "2",
       "src": "./img/placeholder-image-1.png",
       "title": "App Dashboard",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "link": "View In Github",
+      "stacks": [
+        "./img/material ui.png",
+        "./img/react.png",
+        "./img/redux-toolkit.png",
+        "./img/node.png",
+        "./img/express1.png",
+        "./img/postgress.png"
+      ]
     },
     {
       "id": "3",
       "src": "./img/placeholder-image-2.png",
       "title": "Easy Rentn",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "link": "View In Github",
+      "stacks": [
+        "./img/bootstrap.png",
+        "./img/redux-toolkit.png",
+        "./img/react.png"
+        
+      ]
     }
   ],
   "testimonial": [
