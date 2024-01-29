@@ -1,22 +1,67 @@
+import { useState } from "react";
+
 export default function ContactMe() {
+  const [contactData, setContactData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phoneNumber: "",
+    topic: "",
+    message: "",
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(contactData),
+    };
+
+    await fetch("http://localhost:5000/contact", options)
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.log(error));
+    setContactData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phoneNumber: "",
+      topic: "Select One",
+      message: "",
+    });
+  };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setContactData({
+      ...contactData,
+      [name]: value,
+    });
+  };
   return (
     <section id="Contact" className="contact--section">
       <div>
-        <p className="sub--title">Get In Touch</p>
-        <h2>Contact Me</h2>
+        <h2>
+          Contact <span style={{ color: "#e62872" }}>Me</span>
+        </h2>
         <p className="text-lg">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.
+          If you have any ideas to share with me, please feel free to leave your
+          message here along with your genuine information.
         </p>
       </div>
-      <form className="contact--form--container">
+      <form onSubmit={handleSubmit} className="contact--form--container">
         <div className="container">
           <label htmlFor="first-name" className="contact--label">
             <span className="text-md">First Name</span>
             <input
               type="text"
               className="contact--input text-md"
-              name="first-name"
-              id="first-name"
+              name="firstName"
+              id="firstName"
+              value={contactData.firstName}
+              onChange={handleChange}
               required
             />
           </label>
@@ -25,8 +70,10 @@ export default function ContactMe() {
             <input
               type="text"
               className="contact--input text-md"
-              name="last-name"
-              id="last-name"
+              name="lastName"
+              id="lastName"
+              value={contactData.lastName}
+              onChange={handleChange}
               required
             />
           </label>
@@ -37,27 +84,37 @@ export default function ContactMe() {
               className="contact--input text-md"
               name="email"
               id="email"
+              value={contactData.email}
+              onChange={handleChange}
               required
             />
           </label>
           <label htmlFor="phone-number" className="contact--label">
             <span className="text-md">phone-number</span>
             <input
-              type="number"
+              type="text"
               className="contact--input text-md"
-              name="phone-number"
-              id="phone-number"
+              name="phoneNumber"
+              id="phoneNumber"
+              value={contactData.phoneNumber}
+              onChange={handleChange}
               required
             />
           </label>
         </div>
         <label htmlFor="choode-topic" className="contact--label">
           <span className="text-md">Choose a topic</span>
-          <select id="choose-topic" className="contact--input text-md">
+          <select
+            id="choose-topic"
+            name="topic"
+            value={contactData.topic}
+            onChange={handleChange}
+            className="contact--input text-md"
+          >
             <option>Select One...</option>
-            <option>Item 1</option>
-            <option>Item 2</option>
-            <option>Item 3</option>
+            <option>feedback on Portfolio</option>
+            <option>Contact to Hire</option>
+            <option>Other Information</option>
           </select>
         </label>
         <label htmlFor="message" className="contact--label">
@@ -67,6 +124,10 @@ export default function ContactMe() {
             id="message"
             rows="8"
             placeholder="Type your message..."
+            name="message"
+            value={contactData.message}
+            onChange={handleChange}
+            required
           />
         </label>
         <label htmlFor="checkboc" className="checkbox--label">

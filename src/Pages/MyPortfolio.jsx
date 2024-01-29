@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ProjectModal from "../Components/PortfolioModal";
 import data from "../data";
 import {motion} from "framer-motion"
+import { Link } from "react-router-dom";
 export default function MyPortfolio() {
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -22,18 +23,21 @@ export default function MyPortfolio() {
           </h2>
         </div>
         <div className="portfolio--button-container">
-          <button className="btn btn-github">
+          <Link
+            className="btn btn-github"
+            to="https://github.com/MisgeMoges"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
               height="32"
               viewBox="0 0 33 33"
               fill="none"
-            >
-              {/* GitHub icon path */}
-            </svg>
+            ></svg>
+            
             Visit My GitHub
-          </button>
+          </Link>
         </div>
       </div>
       <div className="portfolio--section--container">

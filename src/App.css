@@ -6,7 +6,6 @@
   scroll-behavior: smooth;
 }
 body {
-  
   margin: 0;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: "Roboto", sans-serif;
@@ -34,7 +33,7 @@ p {
 .btn {
   font-family: "Roboto";
   display: inline-block;
-  padding: 14px 32px;
+  padding: 12px 15px;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -235,7 +234,6 @@ h2 {
   align-items: center;
   justify-content: space-between;
   gap: 32px;
-  /* background-color: var(--bg-shade); */
 }
 .hero--section--content-box {
   display: flex;
@@ -312,45 +310,6 @@ h2 {
   min-height: 200px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-/* .skills--section--card:hover {
-  border-bottom: 1px solid var(--primary);
-  border-right: 1px solid var(--primary);
-  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.1);
-} */
-/* .skills--section--card:hover .skills--section--description {
-  color: var(--darkblue);
-}
-.skills--section--img {
-  display: flex;
-  padding: 13.3px;
-  justify-content: center;
-  align-items: center;
-  gap: 13.3px;
-  border-radius: 10.6px;
-  background: #fff;
-  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
-}
-.skills--section--card--content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  align-self: stretch;
-}
-.skills--section--title {
-  color: var(--primary);
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 45px;
-}
-.skills--section--description {
-  color: var(--black);
-  font-size: 21.3px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-}
- */
 
 .frontend {
   display: block;
@@ -443,43 +402,10 @@ h2 {
   margin-top: 5px;
 }
 
-@media screen and (max-width: 768px) {
-  .skills--section {
-    padding: 50px 20px;
-  }
-
-  .skills--section--container {
-    grid-template-columns: 1fr;
-  }
-
-  .skill-card {
-    display: flex;
-    flex-direction: column;
-  }
-  .skill-image {
-    width: 150px;
-    margin-right: 20px;
-    align-items: flex-start;
-  }
-
-  .skill-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-
-  .skill-details {
-    flex: 1;
-    align-items: flex-end;
-  }
-}
-
 /* Skills Style Ends */
 
 /* About Us */
 .about--section {
-  /* display: flex;
-  flex-direction: column; */
   padding: 133.3px 85.3px;
   align-items: center;
 }
@@ -492,50 +418,42 @@ h2 {
   width: 100%;
   height: 100%;
 }
+.experience-section {
+  display: flex;
+  flex-direction: column;
+}
 .about--section .filter-buttons {
-  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
   margin-top: 50px;
   align-content: center;
-  /* display: flex;
-  flex-direction: column;
-  gap: 20px; */
 }
-.filter-button-about {
-  background-color: var(--white);
-  border: 1px solid #e62872;
-  cursor: pointer;
-  border-radius: 10px;
-  margin: 0px 10px;
-  padding: 10px 20px;
-  font-size: 18px;
-  color: var(--darkblue);
-  text-decoration: none;
-  align-items: center;
-}
+
 .content-container {
   display: flex;
   flex-direction: row;
   gap: 30px;
   margin-top: 30px;
   width: 75%;
-  margin: 0px auto;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 .content-container .image {
   align-items: flex-start;
   width: 200px;
   height: 200px;
-  margin-bottom: 30px;
 }
 .content-container .content {
   align-items: flex-end;
   color: var(--darkblue);
   padding-top: 30px;
 }
-.content > div >p{
+.content > div > p {
   padding-left: 50px;
 }
 .filtered-data h3 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: var(--primary);
   align-items: center;
   padding-top: 30px;
@@ -549,9 +467,7 @@ h2 {
 .experience-section {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
 }
 
 /* About Us Ends */
@@ -626,9 +542,6 @@ h2 {
   stroke: #006b6a;
 }
 
-
-/* Add these styles to your CSS file */
-
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -666,32 +579,28 @@ h2 {
 .button-row {
   display: flex;
   align-items: center;
-  gap:10px
+  gap: 10px;
 }
 
 .btn-details-text {
   background: none;
   border: none;
-  color: var(--primary); 
+  color: var(--primary);
   cursor: pointer;
   font-size: 14px;
-  margin-left: 10px; 
+  margin-left: 40px;
 }
-.stack-container{
-  display:  flex;
+.stack-container {
+  display: flex;
   flex-direction: row;
   gap: 20px;
   align-items: center;
 }
-.stack-container >img{
-  margin:30px auto;
+.stack-container > img {
+  margin: 30px auto;
   width: 60px;
   height: 60px;
 }
-/* Add more styles as needed */
-
-
-
 /* Portfolio Ends */
 
 /* Testimonial */
@@ -699,18 +608,14 @@ h2 {
   display: flex;
   padding: 112px 84.3px;
   flex-direction: column;
-  align-items: center; /* Change to center alignment */
+  align-items: center;
   gap: 80px;
   color: var(--darkblue);
   z-index: -999;
 }
 
-.sections--heading {
-  color: var(--heading-color);
-}
-
 .testimonial-carousel {
-  
+  position: relative;
   max-width: 70%;
   padding-left: 30px;
   z-index: -999;
@@ -720,51 +625,65 @@ h2 {
   margin: 0px auto;
 }
 
-.slick-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-size: 24px;
+.happy-clients {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer; 
-  z-index: 999;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: -999;
 }
-.slick-prev {
-  left: 20px; 
+.happy-clients > span {
+  font-size: 32px;
 }
-
-.slick-next {
-  right: 20px; 
+.testimonial--text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -999;
 }
-.slick-prev,
-.slick-next {
-  z-index: 999; 
+.show-happy-client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-.testimonial--header{
+.show-testimonial-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.show-happy-client>span{
+    font-size: 2rem;
+  }
+  
+  .show-testimonial-text>span{
+    font-size: 2rem;
+  }
+.testimonial--header {
   text-align: center;
   display: flex;
-  flex-direction:  column;
+  flex-direction: column;
   gap: 30px;
   color: var(--darkblue);
-  
 }
-.testimonial--text{
+.testimonial--text {
   font-style: italic;
 }
-.trust--testimonial{
-  margin-top: 30px;
-}
-
-
-
-
 
 .testimonial--section--card {
   display: flex;
@@ -774,11 +693,9 @@ h2 {
   gap: 22.6px;
   flex: 1 0 0;
   border-radius: 8px;
-  
 }
 
 .testimonial--section--card--reviews {
-  
   align-items: center;
   gap: 5.33px;
 }
@@ -800,46 +717,33 @@ h2 {
   font-weight: 400;
   line-height: 150%;
 }
-.text-md{
+.text-md {
   width: 100%;
   text-align: center;
 }
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-content {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  width: 80%; /* You can adjust this width as needed */
-  max-width: 600px; /* You can adjust this max-width as needed */
-  position: relative;
-}
-
-.modal-close-btn {
+.testimonial-right-arrow {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 18px;
+  top: 70%;
+  right: 170px;
+  transform: translateY(-50%);
   cursor: pointer;
+  font-size: 28px;
+  background: none;
+  border: none;
+  z-index: 999;
+}
+.testimonial-left-arrow {
+  position: absolute;
+  top: 70%;
+  left: 170px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 28px;
   background: none;
   border: none;
 }
-
-.contact--form--container {
-  width: 100%;
-}
-
 /* Testimonial Ends */
+
 .contact--section {
   display: flex;
   padding: 150px 85px;
@@ -848,6 +752,9 @@ h2 {
   align-items: center;
   text-align: center;
   gap: 64px;
+}
+.contact--section>div>h2{
+margin-bottom: 20px;
 }
 .contact--form--container {
   display: grid;
@@ -910,9 +817,12 @@ input[type="checkbox"] {
   border-radius: 0.15em;
   transform: translatey(-0.075em);
 }
+.text-lg {
+  width: 70%;
+  margin: 0px auto;
+}
 /* Contact End */
 
-/* Footer Start */
 /* Footer Starts */
 .footer--container {
   display: flex;
@@ -981,30 +891,6 @@ input[type="checkbox"] {
   }
 }
 
-@media only screen and (max-width: 1600px) {
-  .skills--section--heading {
-    font-size: 54px;
-    line-height: 70px;
-  }
-  .skills--section--container {
-    gap: 16px;
-  }
-  .skills--section--card {
-    gap: 28px;
-  }
-  .skills--section--card--content {
-    gap: 20px;
-  }
-  .skills--section--title {
-    font-size: 23px;
-    line-height: 30px;
-  }
-  .skills--section--description {
-    font-size: 17.333px;
-    line-height: 27px;
-  }
-}
-
 @media only screen and (max-width: 1200px) {
   .btn-outline-primary {
     display: none;
@@ -1013,6 +899,10 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: column-reverse;
     padding-bottom: 70px;
+  }
+  .get_in_touch {
+    text-align: center;
+    margin-left: 17px;
   }
   .hero--section--title,
   .hero--section-description,
@@ -1034,9 +924,29 @@ input[type="checkbox"] {
   .hero--section--content,
   .hero--section--content--box {
     align-items: center;
+    width: 100%;
   }
   .portfolio--container-box {
     gap: 30px;
+  }
+  .button-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn-details-text {
+    margin-left: 0px;
+  }
+  .stack-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0px auto;
+  }
+  .stack-container > img {
+    margin: 30px auto;
+    width: 30px;
+    height: 30px;
   }
   .skills--section,
   .testimonial--section,
@@ -1046,14 +956,8 @@ input[type="checkbox"] {
     padding-top: 70px;
     padding-bottom: 70px;
   }
-  /* .about--section {
-    gap: 20px;
-    padding-top: 0;
-    padding-bottom: 0;
-  } */
+
   .about--section {
-    /* display: flex;
-  flex-direction: column; */
     padding: 133.3px 85.3px;
     align-items: center;
   }
@@ -1062,6 +966,9 @@ input[type="checkbox"] {
     gap: 24.6px;
     flex-direction: column;
   }
+  .experience-section {
+    margin: 0 auto;
+  }
   .about--section .filter-buttons {
     display: flex;
     flex-direction: column;
@@ -1069,23 +976,26 @@ input[type="checkbox"] {
     width: 100%;
   }
 
+  .filter-button-about {
+    display: block;
+  }
   .content-container {
     display: flex;
     flex-direction: column;
-    gap: 0px;
     width: 100%;
-    margin: 0px auto;
+    gap: 40px;
+    margin-bottom: 30px;
   }
   .content-container .image {
     align-items: center;
     width: 100%;
-   height: 100%;
-   margin-top: 20px;
+    height: 100%;
+    margin-top: 20px;
   }
   .content-container .content {
     width: 100%;
     align-items: center;
-    margin: 0 auto;
+    margin-top: -70px;
   }
   .content > div {
     width: 100%;
@@ -1103,8 +1013,95 @@ input[type="checkbox"] {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .skills--section {
+    padding: 70px 20px;
+  }
+
+  .skills--section--container {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .skill-image {
+    width: 150px;
+    margin-right: 20px;
+    align-items: flex-start;
+  }
+
+  .skill-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .skill-details {
+    flex: 1;
+    align-items: flex-end;
+  }
+  .filter-buttons {
+    margin: 0 auto;
+  }
+
+  .testimonial-carousel {
+    max-width: 100%;
+    padding-left: 0px;
+    z-index: -999;
+  }
+
+  .testimonial--container {
+    margin: 0px auto;
+    width: 100%;
+  }
+
+  .happy-clients {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    width: 100%;
+  }
+  .happy-clients > span {
+    font-size: 24px;
+    margin-top: 40px;
+  }
+  .show-happy-client {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+  }
+  .show-happy-client>span{
+    font-size: 1.5rem;
+  }
+  .show-testimonial-text {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+  }
+  .show-testimonial-text>span{
+    font-size: 1.5rem;
+  }
   .testimonial--section--card {
-    padding: 25px;
+    padding: 0;
+  }
+
+  .testimonial--section--card--author--detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial-right-arrow {
+    position: absolute;
+    top: 33%;
+    right: 10px;
+    padding-left: 100px;
+  }
+  .testimonial-left-arrow {
+    position: absolute;
+    top: 33%;
+    left: 10px;
   }
   .hero--section--title,
   .skills--section--heading,

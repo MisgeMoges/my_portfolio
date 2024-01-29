@@ -78,14 +78,7 @@ export default function HeroSection() {
           </motion.button>
         </motion.div>
       </motion.div>
-      {/* <motion.div
-        className="slidingTextContainer"
-        variants={sliderVariants}
-        initial="initial"
-        animate="animate"
-      >
-        Writer Content Creator Influencer
-      </motion.div> */}
+      
       <MovingBubbles />
       <motion.div className="hero--section--img" initial="initial" animate="animate" variants={imageVariants}>
         <img src="./img/hero_img.png" alt="Hero Section"  variants = {imageVariants}/>
@@ -96,7 +89,6 @@ export default function HeroSection() {
 
 
 const MovingBubbles = () => {
-  // Define an array of bubble data with initial positions and directions
   const bubbles = [
     { id: 1, x: 200, y: 100, directionX: 5, directionY: 5 },
     { id: 2, x: 300, y: 100, directionX: 10, directionY: 5 },
@@ -105,7 +97,6 @@ const MovingBubbles = () => {
     { id: 5, x: 500, y: 500, directionX: -10, directionY: -10 },
     { id: 6, x: 1200, y: 700, directionX: -8, directionY: -5 },
     { id: 7, x: 800, y: 800, directionX: -5, directionY: -1 },
-    // Add more bubbles with different positions and directions
   ];
 
   return (

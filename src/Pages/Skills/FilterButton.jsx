@@ -10,8 +10,6 @@ const FilterButton = ({ category, onClick }) => {
         borderRadius: "10%",
         padding: "10px 10px",
         textTransform: "uppercase",
-        // color: "#f02c0e",
-        // textDecoration: "underline",
       }}
       whileTap={{
         border: "2px solid #f02c0e",

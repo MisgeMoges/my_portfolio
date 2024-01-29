@@ -43,9 +43,9 @@ export default function AboutMe() {
             <p className="hero--section-description">
               I'm a Computer Engineer with a deep passion for technology. My
               skill set spans a spectrum of programming languages, encompassing
-              JavaScript, Python, C++, Java, and web technologies such as HTML,
-              CSS, Bootstrap, and dynamic libraries like React. On the server
-              side, I'm well-versed in Node and Express, while my mobile
+              JavaScript, TypeScript, Python, C++, Java, and web technologies such as HTML,
+              CSS, Bootstrap,Material Ui and dynamic libraries like React, Angular. On the server
+              side, I'm well-versed in Node and Express, NestJs, while my mobile
               development capabilities extend to Flutter. These proficiencies
               empower me to bring innovation to life through the power of code.
             </p>
@@ -54,11 +54,7 @@ export default function AboutMe() {
       </div>
       <motion.div
         className="experience-section"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
+        
       >
         <motion.div
           className="filter-buttons"
@@ -111,7 +107,7 @@ export default function AboutMe() {
                           {item.responsibilities.map((resp, index) => (
                             <p key={index}>
                               <span style={{ marginRight: "10px" }}>
-                                {/* Add your icon JSX here, for example: */}
+                                
                                 <FaRegCheckSquare
                                   style={{ color: "#e62872" }}
                                 />
@@ -121,7 +117,7 @@ export default function AboutMe() {
                           ))}
                         </div>
                       </div>
-                      {/* Add more details as needed */}
+                    
                     </div>
                   </>
                 )}
@@ -165,11 +161,11 @@ export default function AboutMe() {
                         <h5>{item.institution}</h5>
                         <p>{item.description}</p>
                       </div>
-                      {/* Add more details as needed */}
+                      
                     </div>
                   </>
                 )}
-                {/* Add more conditions for other categories as needed */}
+              
               </motion.div>
             ))}
           </motion.div>
@@ -184,19 +180,8 @@ export default function AboutMe() {
 const FilterButton = ({ category, onClick }) => {
   return (
     <motion.button
-      className="filter-button-about"
+      className="btn btn-outline-primary filter-button-about"
       onClick={() => onClick(category)}
-      whileHover={{
-        // border: "2px solid #e62872",
-        background: "#e62872",
-        color: "white",
-        borderRadius: "0px",
-
-        // textTransform: "uppercase",
-        // color: "#f02c0e",
-        // textDecoration: "underline",
-      }}
-      transition={{ duration: 0.8, ease: "easeInOut" }}
     >
       {category}
     </motion.button>

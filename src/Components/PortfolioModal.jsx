@@ -30,7 +30,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             <img key={index} src={stack}></img>
           ))}
         </div>
-        {/* Add other project details as needed */}
+        
       </div>
     </div>
   );

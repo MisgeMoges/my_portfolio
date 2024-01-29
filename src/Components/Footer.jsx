@@ -17,15 +17,13 @@ function Footer() {
           <img src="" alt="Misge" />
         </div>
         <div className="footer--items">
-          <motion.ul>
+          <motion.ul style={{ marginTop: "30px" }}>
             <motion.li
               whileHover={{
                 border: "2px solid #e62872",
                 borderRadius: "10%",
                 padding: "10px 10px",
                 textTransform: "uppercase",
-                // color: "#f02c0e",
-                // textDecoration: "underline",
               }}
               whileTap={{
                 border: "2px solid #f02c0e",
@@ -45,8 +43,25 @@ function Footer() {
                 borderRadius: "10%",
                 padding: "10px 10px",
                 textTransform: "uppercase",
-                // color: "#f02c0e",
-                // textDecoration: "underline",
+              }}
+              whileTap={{
+                border: "2px solid #f02c0e",
+                borderRadius: "10%",
+                padding: "10px 10px",
+              }}
+            >
+              <NavLink to="/about" className="text-md">
+                <LuInfo
+                  style={{ width: "25px", height: "25px", color: "#e62872" }}
+                />
+              </NavLink>
+            </motion.li>
+            <motion.li
+              whileHover={{
+                border: "2px solid #e62872",
+                borderRadius: "10%",
+                padding: "10px 10px",
+                textTransform: "uppercase",
               }}
               whileTap={{
                 border: "2px solid #f02c0e",
@@ -87,50 +102,6 @@ function Footer() {
                 borderRadius: "10%",
                 padding: "10px 10px",
                 textTransform: "uppercase",
-                // color: "#f02c0e",
-                // textDecoration: "underline",
-              }}
-              whileTap={{
-                border: "2px solid #f02c0e",
-                borderRadius: "10%",
-                padding: "10px 10px",
-              }}
-            >
-              <NavLink to="/about" className="text-md">
-                <LuInfo
-                  style={{ width: "25px", height: "25px", color: "#e62872" }}
-                />
-              </NavLink>
-            </motion.li>
-            <motion.li
-              whileHover={{
-                border: "2px solid #e62872",
-                borderRadius: "10%",
-                padding: "10px 10px",
-                textTransform: "uppercase",
-                // color: "#f02c0e",
-                // textDecoration: "underline",
-              }}
-              whileTap={{
-                border: "2px solid #f02c0e",
-                borderRadius: "10%",
-                padding: "10px 10px",
-              }}
-            >
-              <NavLink to="/contact" className="text-md">
-                <GrContact
-                  style={{ width: "25px", height: "25px", color: "#e62872" }}
-                />
-              </NavLink>
-            </motion.li>
-            <motion.li
-              whileHover={{
-                border: "2px solid #e62872",
-                borderRadius: "10%",
-                padding: "10px 10px",
-                textTransform: "uppercase",
-                // color: "#f02c0e",
-                // textDecoration: "underline",
               }}
               whileTap={{
                 border: "2px solid #f02c0e",
@@ -144,13 +115,32 @@ function Footer() {
                 />
               </NavLink>
             </motion.li>
+            <motion.li
+              whileHover={{
+                border: "2px solid #e62872",
+                borderRadius: "10%",
+                padding: "10px 10px",
+                textTransform: "uppercase",
+              }}
+              whileTap={{
+                border: "2px solid #f02c0e",
+                borderRadius: "10%",
+                padding: "10px 10px",
+              }}
+            >
+              <NavLink to="/contact" className="text-md">
+                <GrContact
+                  style={{ width: "25px", height: "25px", color: "#e62872" }}
+                />
+              </NavLink>
+            </motion.li>
           </motion.ul>
         </div>
-        <div className="footer--social--icon">
+        <div className="footer--social--icon" style={{ marginTop: "30px" }}>
           <motion.ul>
             <motion.li>
               <NavLink
-                to="https://www.linkedin.com/in/misgan-moges-49230a235/"
+                to="https://www.linkedin.com/in/misgan-moges-49230a235/" target="_blank"
                 exact
                 className="text-md"
               >
@@ -161,7 +151,7 @@ function Footer() {
             </motion.li>
             <motion.li>
               <NavLink
-                to="https://github.com/MisgeMoges"
+                to="https://github.com/MisgeMoges" target="_blank"
                 exact
                 className="text-md"
               >
@@ -171,7 +161,7 @@ function Footer() {
               </NavLink>
             </motion.li>
             <motion.li>
-              <NavLink to="https://t.me/Bosena25" className="text-md">
+              <NavLink to="https://t.me/Bosena25" target="_blank" className="text-md">
                 <FaTelegramPlane
                   style={{ width: "25px", height: "25px", color: "#e62872" }}
                 />
