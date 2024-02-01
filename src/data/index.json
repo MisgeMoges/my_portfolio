@@ -26,7 +26,7 @@
   "work_experience": [
     {
       "start_date": "01/10/2023",
-      "end_date": "Current",
+      "end_date": "31/01/2024",
       "position": "Software Developer",
       "employer": "Ministry of Innovation and Technology (MinT)",
       "image": "./img/mint.png",
@@ -38,7 +38,7 @@
     },
     {
       "start_date": "10/05/2023",
-      "end_date": "Current",
+      "end_date": "15/12/2023",
       "position": "Software Developer",
       "employer": "Vawick Consulting",
       "location": {
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "start_date": "15/08/2023",
+      "start_date": "15/11/2023",
       "end_date": "Current",
       "position": "Software Developer",
       "employer": "Federal Police - Software Development",
