@@ -241,17 +241,39 @@
   "portfolio": [
     {
       "id": "1",
-      "src": "./img/placeholder-image.png",
-      "title": "Ahuse",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "src": "./img/vawickp.png",
+      "title": "Vawick Website",
+      "description": "The Vawick Company Portfolio Website is an online platform designed to showcase the diverse range of services, projects, and expertise offered by Vawick. .",
       "link": "View In Github",
-      "stacks":["./img/material ui.png", "./img/react.png", "./img/redux-toolkit.png", "./img/redux-saga.png", "./img/node.png", "./img/express1.png", "./img/mongo.png"]
+      "stacks": [
+        "./img/bootstrap.png",
+        "./img/redux-toolkit.png",
+        "./img/react.png"
+        
+      ]
     },
     {
       "id": "2",
-      "src": "./img/placeholder-image-1.png",
-      "title": "App Dashboard",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "src": "./img/federalproject.png",
+      "title": "EFP private security agent management system",
+      "description": "The Ethiopian Federal Police Security Agent Management System is a comprehensive software solution tailored to streamline the management and operations of security agents within the Ethiopian Federal Police force. This system is designed to enhance efficiency and accountability.",
+      "link": "View In Github",
+      "stacks": [
+        
+        "./img/material ui.png",
+        "./img/react.png",
+        "./img/redux-toolkit.png",
+        "./img/redux-saga.png",
+        "./img/node.png",
+        "./img/express1.png",
+        "./img/mongo.png"
+      ]
+    },
+    {
+      "id": "3",
+      "src": "./img/mintp.png",
+      "title": "MinT Innventory Management",
+      "description": "Streamlined inventory management for minister of innovation, real-time analytics, and cost-saving efficiencies, empowering ministries to optimize resource utilization and enhance service delivery",
       "link": "View In Github",
       "stacks": [
         "./img/material ui.png",
@@ -260,19 +282,6 @@
         "./img/node.png",
         "./img/express1.png",
         "./img/postgress.png"
-      ]
-    },
-    {
-      "id": "3",
-      "src": "./img/placeholder-image-2.png",
-      "title": "Easy Rentn",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github",
-      "stacks": [
-        "./img/bootstrap.png",
-        "./img/redux-toolkit.png",
-        "./img/react.png"
-        
       ]
     }
   ],

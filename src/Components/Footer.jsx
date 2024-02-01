@@ -1,15 +1,24 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import {motion} from "framer-motion"
+import React, { useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 import { CiLinkedin } from "react-icons/ci";
-import { FaTelegramPlane, FaHome} from "react-icons/fa";
+import { FaTelegramPlane, FaHome } from "react-icons/fa";
 import { GrProjects, GrContact } from "react-icons/gr";
 import { FiGithub } from "react-icons/fi";
 import { GiSkills } from "react-icons/gi";
 import { LuInfo } from "react-icons/lu";
 import { AiTwotoneCustomerService } from "react-icons/ai";
+import GoToTop from "./GoToTop";
 
 function Footer() {
+  // const { pathname } = useLocation();
+
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0 });
+  // }, [pathname]);
+
+  
+
   return (
     <footer className="footer--container">
       <div className="footer--link--container">
@@ -31,7 +40,7 @@ function Footer() {
                 padding: "10px 10px",
               }}
             >
-              <NavLink to="/" exact className="text-md">
+              <NavLink to="/" exact className="text-md" onClick={GoToTop}>
                 <FaHome
                   style={{ width: "25px", height: "25px", color: "#e62872" }}
                 />
@@ -50,7 +59,7 @@ function Footer() {
                 padding: "10px 10px",
               }}
             >
-              <NavLink to="/about" className="text-md">
+              <NavLink to="/about" className="text-md" onClick={GoToTop}>
                 <LuInfo
                   style={{ width: "25px", height: "25px", color: "#e62872" }}
                 />
@@ -69,7 +78,7 @@ function Footer() {
                 padding: "10px 10px",
               }}
             >
-              <NavLink to="/skills" exact className="text-md">
+              <NavLink to="/skills" exact className="text-md" onClick={GoToTop}>
                 <GiSkills
                   style={{ width: "25px", height: "25px", color: "#e62872" }}
                 />
@@ -81,8 +90,6 @@ function Footer() {
                 borderRadius: "10%",
                 padding: "10px 10px",
                 textTransform: "uppercase",
-                // color: "#f02c0e",
-                // textDecoration: "underline",
               }}
               whileTap={{
                 border: "2px solid #f02c0e",
@@ -90,7 +97,7 @@ function Footer() {
                 padding: "10px 10px",
               }}
             >
-              <NavLink to="/portfolio" className="text-md">
+              <NavLink to="/portfolio" className="text-md" onClick={GoToTop}>
                 <GrProjects
                   style={{ width: "25px", height: "25px", color: "#e62872" }}
                 />
@@ -109,7 +116,7 @@ function Footer() {
                 padding: "10px 10px",
               }}
             >
-              <NavLink to="/testimonial" className="text-md">
+              <NavLink to="/testimonial" className="text-md" onClick={GoToTop}>
                 <AiTwotoneCustomerService
                   style={{ width: "25px", height: "25px", color: "#e62872" }}
                 />
@@ -128,7 +135,7 @@ function Footer() {
                 padding: "10px 10px",
               }}
             >
-              <NavLink to="/contact" className="text-md">
+              <NavLink to="/contact" className="text-md" onClick={GoToTop}>
                 <GrContact
                   style={{ width: "25px", height: "25px", color: "#e62872" }}
                 />
@@ -140,7 +147,8 @@ function Footer() {
           <motion.ul>
             <motion.li>
               <NavLink
-                to="https://www.linkedin.com/in/misgan-moges-49230a235/" target="_blank"
+                to="https://www.linkedin.com/in/misgan-moges-49230a235/"
+                target="_blank"
                 exact
                 className="text-md"
               >
@@ -151,7 +159,8 @@ function Footer() {
             </motion.li>
             <motion.li>
               <NavLink
-                to="https://github.com/MisgeMoges" target="_blank"
+                to="https://github.com/MisgeMoges"
+                target="_blank"
                 exact
                 className="text-md"
               >
@@ -161,7 +170,11 @@ function Footer() {
               </NavLink>
             </motion.li>
             <motion.li>
-              <NavLink to="https://t.me/Bosena25" target="_blank" className="text-md">
+              <NavLink
+                to="https://t.me/Bosena25"
+                target="_blank"
+                className="text-md"
+              >
                 <FaTelegramPlane
                   style={{ width: "25px", height: "25px", color: "#e62872" }}
                 />

@@ -20,7 +20,7 @@ export default function ContactMe() {
       body: JSON.stringify(contactData),
     };
 
-    await fetch("http://localhost:5000/contact", options)
+    await fetch("https://portfolio-backend-ggd2.onrender.com/contact", options)
       .then((response) => response.json())
       .then((data) => console.log(data))
       .catch((error) => console.log(error));

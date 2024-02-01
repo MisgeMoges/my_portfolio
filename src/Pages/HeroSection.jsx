@@ -1,5 +1,7 @@
-import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
+import GoToTop from "../Components/GoToTop";
 
 const textVariants = {
   initial: {
@@ -31,6 +33,8 @@ const imageVariants = {
 };
 
 export default function HeroSection() {
+
+
   return (
     <motion.section id="heroSection" className="hero--section">
       <motion.div
@@ -81,7 +85,7 @@ export default function HeroSection() {
       
       <MovingBubbles />
       <motion.div className="hero--section--img" initial="initial" animate="animate" variants={imageVariants}>
-        <img src="./img/hero_img.png" alt="Hero Section"  variants = {imageVariants}/>
+        <img src="./img/hero.png" alt="Hero Section"  variants = {imageVariants}/>
       </motion.div>
     </motion.section>
   );

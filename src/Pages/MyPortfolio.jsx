@@ -49,7 +49,7 @@ export default function MyPortfolio() {
             <div className="portfolio--section--card--content">
               <div>
                 <h3 className="portfolio--section--title">{item.title}</h3>
-                <p className="text-md">{item.description}</p>
+                <p className="text-md" >{item.description}</p>
               </div>
               <motion.div className="button-row">
                 <p className="text-sm portfolio--link">

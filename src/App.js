@@ -9,24 +9,23 @@ import MyPortfolio from "./Pages/MyPortfolio";
 import Testimonial from "./Pages/Testimonials";
 import ContactMe from "./Pages/ContactMe";
 import MySkills from "./Pages/Skills/MySkills";
+import PageNotFound from "./Pages/PageNotFound";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <div>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/about" element={<AboutMe />}></Route>
-            <Route path="/portfolio" element={<MyPortfolio />}></Route>
-            <Route path="/testimonial" element={<Testimonial />}></Route>
-            <Route path="/contact" element={<ContactMe />}></Route>
-            <Route path="/skills" element={<MySkills />}></Route>
-            <Route path="*" element={<div>404 Not Found</div>}></Route>
-          </Routes>
-          <Footer />
-        </div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/portfolio" element={<MyPortfolio />} />
+          <Route path="/testimonial" element={<Testimonial />} />
+          <Route path="/contact" element={<ContactMe />} />
+          <Route path="/skills" element={<MySkills />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+        <Footer />
       </Router>
     </div>
   );

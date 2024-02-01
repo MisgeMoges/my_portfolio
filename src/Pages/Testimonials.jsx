@@ -147,7 +147,7 @@ export default function Testimonial() {
                 </svg>
               ))}
             </div>
-            <p className="text-md">{sliderData[currentSlide]?.description}</p>
+            <p className="text-md testimonial-description">{sliderData[currentSlide]?.description}</p>
             <div className="testimonial--section--card--author--detail">
               <img src={sliderData[currentSlide]?.src} alt="Avatar" />
               <div>
