@@ -161,39 +161,41 @@ function Footer() {
         <div className="footer--social--icon" style={{ marginTop: "30px" }}>
           <motion.ul>
             <motion.li>
-              <NavLink
-                to="https://www.linkedin.com/in/misgan-moges-49230a235/"
+              <a
+                href="https://www.linkedin.com/in/misgan-moges-49230a235/"
                 target="_blank"
-                exact
+                rel="noopener noreferrer"
                 className="text-md"
               >
                 <CiLinkedin
                   style={{ width: "25px", height: "25px", color: "#e62872" }}
                 />
-              </NavLink>
+              </a>
             </motion.li>
             <motion.li>
-              <NavLink
-                to="https://github.com/MisgeMoges"
+              <a
+                href="https://github.com/MisgeMoges"
                 target="_blank"
-                exact
+                rel="noopener noreferrer"
                 className="text-md"
               >
                 <FiGithub
                   style={{ width: "25px", height: "25px", color: "#e62872" }}
                 />
-              </NavLink>
+              </a>
             </motion.li>
             <motion.li>
-              <NavLink
-                to="https://t.me/Bosena25"
+              <a
+                href="https://t.me/Bosena25"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-md"
               >
                 <FaTelegramPlane
                   style={{ width: "25px", height: "25px", color: "#e62872" }}
                 />
-              </NavLink>
+              </a>
+              
             </motion.li>
           </motion.ul>
         </div>
@@ -226,4 +228,5 @@ function Footer() {
 }
 
 export default Footer;
+
 
