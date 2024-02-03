@@ -40,7 +40,9 @@ function Navbar() {
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div>
-        <img src="" alt="Misge" />
+        <NavLink to="/">
+          <img src="./img/final logo 1.png" alt="Misge" />
+        </NavLink>
       </div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
@@ -77,7 +79,6 @@ function Navbar() {
               className={`navbar--content ${
                 isNavLinkActive("/") ? "navbar--content-active" : ""
               }`}
-              
             >
               Home
             </NavLink>
@@ -136,7 +137,6 @@ function Navbar() {
               className={`navbar--content ${
                 isNavLinkActive("/") ? "navbar--content-active" : ""
               }`}
-             
             >
               My Skills
             </NavLink>
@@ -166,7 +166,6 @@ function Navbar() {
               className={`navbar--content ${
                 isNavLinkActive("/") ? "navbar--content-active" : ""
               }`}
-              
             >
               Portfolio
             </NavLink>
@@ -180,8 +179,6 @@ function Navbar() {
               borderRadius: "10%",
               padding: "10px 10px",
               textTransform: "uppercase",
-              // color: "#f02c0e",
-              // textDecoration: "underline",
             }}
             whileTap={{
               border: "2px solid #f02c0e",
@@ -200,18 +197,37 @@ function Navbar() {
               Testimonials
             </NavLink>
           </motion.li>
+          <motion.li
+            whileHover={{
+              rotate: 360,
+              scale: 1.2,
+              border: "2px solid #e62872",
+              borderRadius: "10%",
+              padding: "10px 10px",
+              textTransform: "uppercase",
+            }}
+            whileTap={{
+              border: "2px solid #f02c0e",
+              borderRadius: "10%",
+              padding: "10px 10px",
+            }}
+          >
+            <NavLink
+              onClick={closeMenu}
+              activeClassName="navbar--active-content"
+              to="/resume"
+              className={`navbar--content ${
+                isNavLinkActive("/") ? "navbar-content-active" : ""
+              }`}
+            >
+              Resume
+            </NavLink>
+          </motion.li>
         </motion.ul>
       </div>
       <motion.div
         whileHover={{
           rotate: 360,
-          // scale: 1.2,
-          // border: "2px solid #5e3bee",
-          // borderRadius: "10%",
-          // padding: "10px 10px",
-          // textTransform: "uppercase",
-          // color: "#f02c0e",
-          // textDecoration: "underline",
         }}
         whileTap={{
           border: "2px solid #f02c0e",

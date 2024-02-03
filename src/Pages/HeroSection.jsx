@@ -85,7 +85,7 @@ export default function HeroSection() {
       
       <MovingBubbles />
       <motion.div className="hero--section--img" initial="initial" animate="animate" variants={imageVariants}>
-        <img src="./img/hero.png" alt="Hero Section"  variants = {imageVariants}/>
+        <img src="./img/hero_new.png" alt="Hero Section"  variants = {imageVariants}/>
       </motion.div>
     </motion.section>
   );

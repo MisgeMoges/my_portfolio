@@ -290,15 +290,15 @@
       "id": "1",
       "count": "5",
       "src": "./img/avatar-image.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Misgan Moges",
-      "position": "Software Developer"
+      "description": "Your passion for crafting code that brings ideas to life is truly inspiring. Your solutions consistently exceed expectations, pushing boundaries and enhancing user experiences.",
+      "author_name": "Zeamanuel Feleke",
+      "position": "Software Engineer"
     },
     {
       "id": "2",
       "count": "5",
       "src": "./img/avatar-image-1.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "description": "Your leadership in driving projects from conception to completion has been exceptional. Your strategic planning ensures that milestones are not only met but surpassed, delivering outstanding results every time.",
       "author_name": "Kelvin Bonson",
       "position": "Project Manager"
     },
@@ -306,7 +306,7 @@
       "id": "3",
       "count": "5",
       "src": "./img/avatar-image-2.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "description": "Your expertise in efficiently managing data has been invaluable to our success. Thanks to your diligent work, our operations run seamlessly with guaranteed data integrity and accessibility.",
       "author_name": "Semayneh Kebede",
       "position": "Database Administrator"
     }

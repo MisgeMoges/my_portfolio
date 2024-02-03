@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import React from "react";
+import { NavLink} from "react-router-dom";
 import { motion } from "framer-motion";
 import { CiLinkedin } from "react-icons/ci";
 import { FaTelegramPlane, FaHome } from "react-icons/fa";
-import { GrProjects, GrContact } from "react-icons/gr";
+import { GrProjects, GrContact, GrResume } from "react-icons/gr";
 import { FiGithub } from "react-icons/fi";
 import { GiSkills } from "react-icons/gi";
 import { LuInfo } from "react-icons/lu";
@@ -11,19 +11,15 @@ import { AiTwotoneCustomerService } from "react-icons/ai";
 import GoToTop from "./GoToTop";
 
 function Footer() {
-  // const { pathname } = useLocation();
-
-  // useEffect(() => {
-  //   window.scrollTo({ top: 0 });
-  // }, [pathname]);
-
   
 
   return (
     <footer className="footer--container">
       <div className="footer--link--container">
         <div>
-          <img src="" alt="Misge" />
+          <NavLink to="/">
+            <img src="./img/final logo 1.png" alt="Misge" />
+          </NavLink>
         </div>
         <div className="footer--items">
           <motion.ul style={{ marginTop: "30px" }}>
@@ -141,6 +137,25 @@ function Footer() {
                 />
               </NavLink>
             </motion.li>
+            <motion.li
+              whileHover={{
+                border: "2px solid #e62872",
+                borderRadius: "10%",
+                padding: "10px 10px",
+                textTransform: "uppercase",
+              }}
+              whileTap={{
+                border: "2px solid #f02c0e",
+                borderRadius: "10%",
+                padding: "10px 10px",
+              }}
+            >
+              <NavLink to="/resume" className="text-md" onClick={GoToTop}>
+                <GrResume
+                  style={{ width: "25px", height: "25px", color: "#e62872" }}
+                />
+              </NavLink>
+            </motion.li>
           </motion.ul>
         </div>
         <div className="footer--social--icon" style={{ marginTop: "30px" }}>
@@ -211,3 +226,4 @@ function Footer() {
 }
 
 export default Footer;
+

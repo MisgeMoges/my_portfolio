@@ -1,4 +1,5 @@
 import "./App.css";
+
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
@@ -9,6 +10,7 @@ import MyPortfolio from "./Pages/MyPortfolio";
 import Testimonial from "./Pages/Testimonials";
 import ContactMe from "./Pages/ContactMe";
 import MySkills from "./Pages/Skills/MySkills";
+import Resume from "./Pages/Resume";
 import PageNotFound from "./Pages/PageNotFound";
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
           <Route path="/testimonial" element={<Testimonial />} />
           <Route path="/contact" element={<ContactMe />} />
           <Route path="/skills" element={<MySkills />} />
+          <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
