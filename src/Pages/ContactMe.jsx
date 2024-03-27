@@ -44,7 +44,7 @@ export default function ContactMe() {
     <section id="Contact" className="contact--section">
       <div>
         <h2>
-          Contact <span style={{ color: "#e62872" }}>Me</span>
+          Contact <span style={{ color: "#5e3bee" }}>Me</span>
         </h2>
         <p className="text-lg">
           If you have any ideas to share with me, please feel free to leave your

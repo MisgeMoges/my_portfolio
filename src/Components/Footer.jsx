@@ -10,6 +10,22 @@ import { LuInfo } from "react-icons/lu";
 import { AiTwotoneCustomerService } from "react-icons/ai";
 import GoToTop from "./GoToTop";
 
+const myVariant = {
+  hover: {
+    rotate: 360,
+    scale: 1.2,
+    border: "2px solid #5e3bee",
+    borderRadius: "10%",
+    padding: "5px 5px",
+    marginBottom:"10px",
+    textTransform: "uppercase",
+  },
+  tap: {
+    border: "2px solid #5e3bee",
+    borderRadius: "10%",
+    padding: "10px 10px",
+  },
+};
 function Footer() {
   
 
@@ -22,143 +38,47 @@ function Footer() {
           </NavLink>
         </div>
         <div className="footer--items">
-          <motion.ul style={{ marginTop: "30px" }}>
-            <motion.li
-              whileHover={{
-                border: "2px solid #e62872",
-                borderRadius: "10%",
-                padding: "10px 10px",
-                textTransform: "uppercase",
-              }}
-              whileTap={{
-                border: "2px solid #f02c0e",
-                borderRadius: "10%",
-                padding: "10px 10px",
-              }}
-            >
+          <motion.ul style={{ marginTop: "0px" }}>
+            <motion.li whileHover="hover" whileTap="tap" variants={myVariant}>
               <NavLink to="/" exact className="text-md" onClick={GoToTop}>
-                <FaHome
-                  style={{ width: "25px", height: "25px", color: "#e62872" }}
-                />
+                <FaHome className="footer-icon" />
               </NavLink>
             </motion.li>
-            <motion.li
-              whileHover={{
-                border: "2px solid #e62872",
-                borderRadius: "10%",
-                padding: "10px 10px",
-                textTransform: "uppercase",
-              }}
-              whileTap={{
-                border: "2px solid #f02c0e",
-                borderRadius: "10%",
-                padding: "10px 10px",
-              }}
-            >
+            <motion.li whileHover="hover" whileTap="tap" variants={myVariant}>
               <NavLink to="/about" className="text-md" onClick={GoToTop}>
-                <LuInfo
-                  style={{ width: "25px", height: "25px", color: "#e62872" }}
-                />
+                <LuInfo className="footer-icon" />
               </NavLink>
             </motion.li>
-            <motion.li
-              whileHover={{
-                border: "2px solid #e62872",
-                borderRadius: "10%",
-                padding: "10px 10px",
-                textTransform: "uppercase",
-              }}
-              whileTap={{
-                border: "2px solid #f02c0e",
-                borderRadius: "10%",
-                padding: "10px 10px",
-              }}
-            >
+            <motion.li whileHover="hover" whileTap="tap" variants={myVariant}>
               <NavLink to="/skills" exact className="text-md" onClick={GoToTop}>
-                <GiSkills
-                  style={{ width: "25px", height: "25px", color: "#e62872" }}
-                />
+                <GiSkills className="footer-icon" />
               </NavLink>
             </motion.li>
-            <motion.li
-              whileHover={{
-                border: "2px solid #e62872",
-                borderRadius: "10%",
-                padding: "10px 10px",
-                textTransform: "uppercase",
-              }}
-              whileTap={{
-                border: "2px solid #f02c0e",
-                borderRadius: "10%",
-                padding: "10px 10px",
-              }}
-            >
+            <motion.li whileHover="hover" whileTap="tap" variants={myVariant}>
               <NavLink to="/portfolio" className="text-md" onClick={GoToTop}>
                 <GrProjects
-                  style={{ width: "25px", height: "25px", color: "#e62872" }}
+                  className="footer-icon"
                 />
               </NavLink>
             </motion.li>
-            <motion.li
-              whileHover={{
-                border: "2px solid #e62872",
-                borderRadius: "10%",
-                padding: "10px 10px",
-                textTransform: "uppercase",
-              }}
-              whileTap={{
-                border: "2px solid #f02c0e",
-                borderRadius: "10%",
-                padding: "10px 10px",
-              }}
-            >
+            <motion.li whileHover="hover" whileTap="tap" variants={myVariant}>
               <NavLink to="/testimonial" className="text-md" onClick={GoToTop}>
-                <AiTwotoneCustomerService
-                  style={{ width: "25px", height: "25px", color: "#e62872" }}
-                />
+                <AiTwotoneCustomerService className="footer-icon" />
               </NavLink>
             </motion.li>
-            <motion.li
-              whileHover={{
-                border: "2px solid #e62872",
-                borderRadius: "10%",
-                padding: "10px 10px",
-                textTransform: "uppercase",
-              }}
-              whileTap={{
-                border: "2px solid #f02c0e",
-                borderRadius: "10%",
-                padding: "10px 10px",
-              }}
-            >
+            <motion.li whileHover="hover" whileTap="tap" variants={myVariant}>
               <NavLink to="/contact" className="text-md" onClick={GoToTop}>
-                <GrContact
-                  style={{ width: "25px", height: "25px", color: "#e62872" }}
-                />
+                <GrContact className="footer-icon" />
               </NavLink>
             </motion.li>
-            <motion.li
-              whileHover={{
-                border: "2px solid #e62872",
-                borderRadius: "10%",
-                padding: "10px 10px",
-                textTransform: "uppercase",
-              }}
-              whileTap={{
-                border: "2px solid #f02c0e",
-                borderRadius: "10%",
-                padding: "10px 10px",
-              }}
-            >
+            <motion.li whileHover="hover" whileTap="tap" variants={myVariant}>
               <NavLink to="/resume" className="text-md" onClick={GoToTop}>
-                <GrResume
-                  style={{ width: "25px", height: "25px", color: "#e62872" }}
-                />
+                <GrResume className="footer-icon" />
               </NavLink>
             </motion.li>
           </motion.ul>
         </div>
-        <div className="footer--social--icon" style={{ marginTop: "30px" }}>
+        <div className="footer--social--icon" style={{ marginTop: "0px" }}>
           <motion.ul>
             <motion.li>
               <a
@@ -168,7 +88,7 @@ function Footer() {
                 className="text-md"
               >
                 <CiLinkedin
-                  style={{ width: "25px", height: "25px", color: "#e62872" }}
+                  style={{ width: "25px", height: "25px", color: "#5e3bee" }}
                 />
               </a>
             </motion.li>
@@ -180,7 +100,7 @@ function Footer() {
                 className="text-md"
               >
                 <FiGithub
-                  style={{ width: "25px", height: "25px", color: "#e62872" }}
+                  style={{ width: "25px", height: "25px", color: "#5e3bee" }}
                 />
               </a>
             </motion.li>
@@ -192,10 +112,9 @@ function Footer() {
                 className="text-md"
               >
                 <FaTelegramPlane
-                  style={{ width: "25px", height: "25px", color: "#e62872" }}
+                  style={{ width: "25px", height: "25px", color: "#5e3bee" }}
                 />
               </a>
-              
             </motion.li>
           </motion.ul>
         </div>

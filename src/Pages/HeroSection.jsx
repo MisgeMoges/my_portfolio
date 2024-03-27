@@ -53,7 +53,7 @@ export default function HeroSection() {
           <motion.h2 className="hero--section--title" variants={textVariants}>
             <span
               className="hero--section-title--color"
-              style={{ color: "#e62872" }}
+              style={{ color: "#5e3bee" }}
             >
               Software
             </span>
@@ -62,8 +62,8 @@ export default function HeroSection() {
           </motion.h2>
           <p className="hero--section-description">
             I'm a passionate Computer Engineer with expertise in a variety of
-            programming languages. With this diverse skill
-            set, I bring innovation to life through the power of code.
+            programming languages. With this diverse skill set, I bring
+            innovation to life through the power of code.
           </p>
         </motion.div>
         <motion.div variants={textVariants}>
@@ -82,10 +82,19 @@ export default function HeroSection() {
           </motion.button>
         </motion.div>
       </motion.div>
-      
+
       <MovingBubbles />
-      <motion.div className="hero--section--img" initial="initial" animate="animate" variants={imageVariants}>
-        <img src="./img/hero_new.png" alt="Hero Section"  variants = {imageVariants}/>
+      <motion.div
+        className="hero--section--img"
+        initial="initial"
+        animate="animate"
+        variants={imageVariants}
+      >
+        <img
+          src="./img/hero_new.png"
+          alt="Hero Section"
+          variants={imageVariants}
+        />
       </motion.div>
     </motion.section>
   );

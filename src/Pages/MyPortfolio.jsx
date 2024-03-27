@@ -19,7 +19,7 @@ export default function MyPortfolio() {
       <div className="portfolio--container-box">
         <div className="portfolio--container">
           <h2 className="section--heading">
-            <span style={{ color: "#e62872" }}>My</span> Portfolio
+            <span style={{ color: "#5e3bee" }}>My</span> Portfolio
           </h2>
         </div>
         <div className="portfolio--button-container">
@@ -35,7 +35,6 @@ export default function MyPortfolio() {
               viewBox="0 0 33 33"
               fill="none"
             ></svg>
-            
             Visit My GitHub
           </Link>
         </div>
@@ -49,7 +48,7 @@ export default function MyPortfolio() {
             <div className="portfolio--section--card--content">
               <div>
                 <h3 className="portfolio--section--title">{item.title}</h3>
-                <p className="text-md" >{item.description}</p>
+                <p className="text-md">{item.description}</p>
               </div>
               <motion.div className="button-row">
                 <p className="text-sm portfolio--link">

@@ -3,7 +3,21 @@ import { NavLink, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
-
+const myVariant = {
+  hover: {
+    rotate: 360,
+    scale: 1.2,
+    border: "2px solid #5e3bee",
+    borderRadius: "10%",
+    padding: "5px 5px",
+    textTransform: "uppercase",
+  },
+  tap: {
+    border: "2px solid #5e3bee",
+    borderRadius: "10%",
+    padding: "10px 10px",
+  },
+};
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
   const location = useLocation();
@@ -54,23 +68,7 @@ function Navbar() {
       </a>
       <div className={`navbar--items ${navActive ? "active" : ""}`}>
         <motion.ul>
-          <motion.li
-            whileHover={{
-              rotate: 360,
-              scale: 1.2,
-              border: "2px solid #e62872",
-              borderRadius: "10%",
-              padding: "10px 10px",
-              textTransform: "uppercase",
-              // color: "#f02c0e",
-              // textDecoration: "underline",
-            }}
-            whileTap={{
-              border: "2px solid #f02c0e",
-              borderRadius: "10%",
-              padding: "10px 10px",
-            }}
-          >
+          <motion.li whileHover="hover" whileTap="tap" variants={myVariant}>
             <NavLink
               onClick={closeMenu}
               activeClassName="navbar--active-content"
@@ -84,23 +82,7 @@ function Navbar() {
             </NavLink>
           </motion.li>
 
-          <motion.li
-            whileHover={{
-              rotate: 360,
-              scale: 1.2,
-              border: "2px solid #e62872",
-              borderRadius: "10%",
-              padding: "10px 10px",
-              textTransform: "uppercase",
-              // color: "#f02c0e",
-              // textDecoration: "underline",
-            }}
-            whileTap={{
-              border: "2px solid #f02c0e",
-              borderRadius: "10%",
-              padding: "10px 10px",
-            }}
-          >
+          <motion.li whileHover="hover" whileTap="tap" variants={myVariant}>
             <NavLink
               onClick={closeMenu}
               activeClassName="navbar--active-content"
@@ -112,23 +94,7 @@ function Navbar() {
               About Me
             </NavLink>
           </motion.li>
-          <motion.li
-            whileHover={{
-              rotate: 360,
-              scale: 1.2,
-              border: "2px solid #e62872",
-              borderRadius: "10%",
-              padding: "10px 10px",
-              textTransform: "uppercase",
-              // color: "#f02c0e",
-              // textDecoration: "underline",
-            }}
-            whileTap={{
-              border: "2px solid #f02c0e",
-              borderRadius: "10%",
-              padding: "10px 10px",
-            }}
-          >
+          <motion.li whileHover="hover" whileTap="tap" variants={myVariant}>
             <NavLink
               onClick={closeMenu}
               activeClassName="navbar--active-content"
@@ -142,23 +108,7 @@ function Navbar() {
             </NavLink>
           </motion.li>
 
-          <motion.li
-            whileHover={{
-              rotate: 360,
-              scale: 1.2,
-              border: "2px solid #e62872",
-              borderRadius: "10%",
-              padding: "10px 10px",
-              textTransform: "uppercase",
-              // color: "#f02c0e",
-              // textDecoration: "underline",
-            }}
-            whileTap={{
-              border: "2px solid #f02c0e",
-              borderRadius: "10%",
-              padding: "10px 10px",
-            }}
-          >
+          <motion.li whileHover="hover" whileTap="tap" variants={myVariant}>
             <NavLink
               onClick={closeMenu}
               activeClassName="navbar--active-content"
@@ -171,21 +121,7 @@ function Navbar() {
             </NavLink>
           </motion.li>
 
-          <motion.li
-            whileHover={{
-              rotate: 360,
-              scale: 1.2,
-              border: "2px solid #e62872",
-              borderRadius: "10%",
-              padding: "10px 10px",
-              textTransform: "uppercase",
-            }}
-            whileTap={{
-              border: "2px solid #f02c0e",
-              borderRadius: "10%",
-              padding: "10px 10px",
-            }}
-          >
+          <motion.li whileHover="hover" whileTap="tap" variants={myVariant}>
             <NavLink
               onClick={closeMenu}
               activeClassName="navbar--active-content"
@@ -197,21 +133,7 @@ function Navbar() {
               Testimonials
             </NavLink>
           </motion.li>
-          <motion.li
-            whileHover={{
-              rotate: 360,
-              scale: 1.2,
-              border: "2px solid #e62872",
-              borderRadius: "10%",
-              padding: "10px 10px",
-              textTransform: "uppercase",
-            }}
-            whileTap={{
-              border: "2px solid #f02c0e",
-              borderRadius: "10%",
-              padding: "10px 10px",
-            }}
-          >
+          <motion.li whileHover="hover" whileTap="tap" variants={myVariant}>
             <NavLink
               onClick={closeMenu}
               activeClassName="navbar--active-content"
@@ -230,7 +152,7 @@ function Navbar() {
           rotate: 360,
         }}
         whileTap={{
-          border: "2px solid #f02c0e",
+          border: "2px solid #5e3bee",
           borderRadius: "10%",
           padding: "10px 10px",
         }}

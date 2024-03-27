@@ -38,24 +38,22 @@ export default function AboutMe() {
         <div className="hero--section--content--box about--section--box">
           <div className="hero--section--content">
             <h2 className="skills-section--heading">
-              About <span style={{ color: "#e62872" }}>Me</span>
+              About <span style={{ color: "#5e3bee" }}>Me</span>
             </h2>
             <p className="hero--section-description">
               I'm a Computer Engineer with a deep passion for technology. My
               skill set spans a spectrum of programming languages, encompassing
-              JavaScript, TypeScript, Python, C++, Java, and web technologies such as HTML,
-              CSS, Bootstrap,Material Ui and dynamic libraries like React, Angular. On the server
-              side, I'm well-versed in Node and Express, NestJs, while my mobile
-              development capabilities extend to Flutter. These proficiencies
-              empower me to bring innovation to life through the power of code.
+              JavaScript, TypeScript, Python, C++, Java, and web technologies
+              such as HTML, CSS, Bootstrap,Material Ui and dynamic libraries
+              like React, Angular. On the server side, I'm well-versed in Node
+              and Express, NestJs, while my mobile development capabilities
+              extend to Flutter. These proficiencies empower me to bring
+              innovation to life through the power of code.
             </p>
           </div>
         </div>
       </div>
-      <motion.div
-        className="experience-section"
-        
-      >
+      <motion.div className="experience-section">
         <motion.div
           className="filter-buttons"
           variants={containerVariants}
@@ -107,9 +105,8 @@ export default function AboutMe() {
                           {item.responsibilities.map((resp, index) => (
                             <p key={index}>
                               <span style={{ marginRight: "10px" }}>
-                                
                                 <FaRegCheckSquare
-                                  style={{ color: "#e62872" }}
+                                  style={{ color: "#5e3bee" }}
                                 />
                               </span>
                               {resp}
@@ -117,7 +114,6 @@ export default function AboutMe() {
                           ))}
                         </div>
                       </div>
-                    
                     </div>
                   </>
                 )}
@@ -161,11 +157,9 @@ export default function AboutMe() {
                         <h5>{item.institution}</h5>
                         <p>{item.description}</p>
                       </div>
-                      
                     </div>
                   </>
                 )}
-              
               </motion.div>
             ))}
           </motion.div>

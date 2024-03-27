@@ -119,13 +119,13 @@ export default function Testimonial() {
       </div>
       <hr
         className="divider testimonial-divider"
-        style={{ color: "#f02c0e", marginTop: "60px" }}
+        style={{ color: "#5e3bee", marginTop: "60px" }}
       />
       <button
         className="testimonial-left-arrow"
         onClick={() => goToPrevSlide()}
       >
-        <FaChevronLeft style={{ color: "#f02c0e" }} />
+        <FaChevronLeft style={{ color: "#5e3bee" }} />
       </button>
       <div className="testimonial-carousel">
         <div className="testimonial--container">
@@ -147,7 +147,9 @@ export default function Testimonial() {
                 </svg>
               ))}
             </div>
-            <p className="text-md testimonial-description">{sliderData[currentSlide]?.description}</p>
+            <p className="text-md testimonial-description">
+              {sliderData[currentSlide]?.description}
+            </p>
             <div className="testimonial--section--card--author--detail">
               <img src={sliderData[currentSlide]?.src} alt="Avatar" />
               <div>
@@ -163,7 +165,7 @@ export default function Testimonial() {
         </div>
       </div>
       <button className="testimonial-right-arrow" onClick={goToNextSlide}>
-        <FaChevronRight style={{ color: "#f02c0e" }} />
+        <FaChevronRight style={{ color: "#5e3bee" }} />
       </button>
     </section>
   );

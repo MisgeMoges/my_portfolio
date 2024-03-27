@@ -49,7 +49,7 @@ const SkillsContainer = () => {
         animate="animate"
       >
         <motion.h2 className="skills--section--heading" variants={textVariants}>
-          <span style={{ color: "#e62872" }}>My </span> Expertise
+          <span style={{ color: "#5e3bee" }}>My </span> Expertise
         </motion.h2>
       </motion.div>
       <div className="filter-buttons">
@@ -61,7 +61,7 @@ const SkillsContainer = () => {
           />
         ))}
       </div>
-      <hr className="divider"  />
+      <hr className="divider" />
       <SkillsList skills={filteredSkills} />
     </div>
   );
